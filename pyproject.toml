@@ -1,0 +1,15 @@
+[project]
+name = "solar-control"
+version = "0.1.0"
+description = "Control compoment for solar panels of the BEAM system."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.11.5",
+    "pymodbus>=3.0.0",
+    "redis>=4.0.0",
+    "structlog>=25.4.0",
+]
+
+[tool.uv.scripts]
+main = "python main.py"
